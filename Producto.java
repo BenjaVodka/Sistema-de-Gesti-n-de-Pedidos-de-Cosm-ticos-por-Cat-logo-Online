@@ -24,6 +24,23 @@ public class Producto {
         this.tipo = tipo;
         this.precioUnitario = precioUnitario;
     }
+    
+    
+    public boolean productoValido(String producto){
+        
+        return producto.equals("crema") && producto.equals("perfume");
+    }
+    
+    
+    public double totalBruto(){
+        
+        int cantidad = 0;
+        double total = 0;
+        
+        
+        total = cantidad * precioUnitario;
+        return total;
+    }
 
     public String getCodigoUnico() {
         return codigoUnico;
