@@ -22,6 +22,7 @@ public class Sistema {
         String lectura;
         int numero;
         int opcion;
+        String producto;
         
         //Cliente(String rut, String nombre, int edad, String fechaNacimiento)
         
@@ -138,8 +139,34 @@ public class Sistema {
                     vendedor1.setFechaIngreso(lectura);
                     
                     
-                    System.out.println("");
+                    System.out.println("Ingrese la region en la que trabaja: ");
+                    lectura = leer.next();
+                    vendedor1.setRegionTrabaja(lectura);
+                    
                 case 3:
+                    
+                    System.out.println("Ingrese el codigo unico del producto: ");
+                    lectura = leer.next();
+                    producto1.setCodigoUnico(lectura);
+                    
+                    System.out.println("Ingrese el nombre del producto: ");
+                    lectura = leer.next();
+                    producto1.setNombre(lectura);
+                    
+                    
+                    do{
+                        
+                      System.out.println("Ingrese el tipo (Crema/Perfume): ");
+                      producto = leer.next().toLowerCase().trim();
+                      
+                      if(producto1.productoValido(producto)){
+                          break;
+                          
+                      }else{
+                          
+                      } System.out.println("Debes ingresar un producto crema o perfume");
+                    }while(true);
+                    
                 case 4:
                 case 5:
                     System.out.println("Saliendo del sistema...");

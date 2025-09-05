@@ -27,7 +27,14 @@ public class Pedido {
         this.fechaPedido = fechaPedido;
     }
     
-   
+    public boolean pedidoConfirmado(){
+        
+  
+            
+  
+       
+    }
+    
     public String getRegistrarCliente() {
         return registrarCliente;
     }
