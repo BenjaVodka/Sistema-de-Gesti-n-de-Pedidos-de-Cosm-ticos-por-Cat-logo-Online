@@ -107,7 +107,18 @@ public class Sistema {
                     numero = leer.nextInt();
                     vendedor1.setNroVendedor(numero);
                     
-                    System.out.println("");
+                    
+                    System.out.println("Ingrese nombre de vendedor: ");
+                    lectura = leer.next();
+                    
+                    do{
+                        if(lectura.equals("")){
+                            System.out.println("El nombre no debe estar vacio!");
+                            
+                        }else {
+                            vendedor1.setNombre(lectura);
+                        }
+                    }while (lectura.equals(""));
                     System.out.println("");
                     System.out.println("");
                 case 3:
