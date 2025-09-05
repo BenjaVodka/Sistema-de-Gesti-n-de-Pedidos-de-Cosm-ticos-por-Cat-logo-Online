@@ -26,6 +26,8 @@ public class Vendedor {
         this.fechaIngreso = fechaIngreso;
         this.regionTrabaja = regionTrabaja;
     }
+    
+  
 
     public String getRut() {
         return rut;

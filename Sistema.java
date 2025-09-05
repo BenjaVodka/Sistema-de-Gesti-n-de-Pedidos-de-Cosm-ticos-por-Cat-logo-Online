@@ -78,6 +78,8 @@ public class Sistema {
                         }
                     }while (lectura.equals(""));
                     
+                    cliente1.setNombre(lectura);
+                    
                     System.out.println("Ingrese edad del cliente: ");
                     numero = leer.nextInt();
                     
@@ -115,11 +117,27 @@ public class Sistema {
                         if(lectura.equals("")){
                             System.out.println("El nombre no debe estar vacio!");
                             
-                        }else {
-                            vendedor1.setNombre(lectura);
                         }
+                        
                     }while (lectura.equals(""));
-                    System.out.println("");
+                    
+                    vendedor1.setNombre(lectura);
+                    
+                    String fecha_maxima ="2025-09-05";
+                    do{
+                       
+                        System.out.println("Ingrese fecha de ingreso(AAAA-MM-DD): ");
+                        lectura = leer.next();
+                        if (lectura.compareTo(fecha_maxima) > 0){
+                          System.out.println("Error: la fecha de ingreso no puede ser posterior a "+fecha_maxima);
+                          
+                        }
+                        
+                    }while (lectura.compareTo(fecha_maxima) > 0);
+                    
+                    vendedor1.setFechaIngreso(lectura);
+                    
+                    
                     System.out.println("");
                 case 3:
                 case 4:

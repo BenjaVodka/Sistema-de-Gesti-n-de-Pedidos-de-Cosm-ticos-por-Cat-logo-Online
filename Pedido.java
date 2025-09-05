@@ -27,14 +27,7 @@ public class Pedido {
         this.fechaPedido = fechaPedido;
     }
     
-    public double totalBruto(Producto precio_unitario){
-        
-        //total = cantidad * precio_unitario;
-        return 0;
-        
-        
-    }
-
+   
     public String getRegistrarCliente() {
         return registrarCliente;
     }
