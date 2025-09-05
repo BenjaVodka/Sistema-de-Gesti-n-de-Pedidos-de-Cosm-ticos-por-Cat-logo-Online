@@ -96,6 +96,20 @@ public class Sistema {
                     System.out.println("Cliente registrado con éxito!");
                     break;
                 case 2:
+                    
+                    System.out.println("-- INGRESO DE VENDEDOR --");
+                    System.out.println("Ingrese RUT: ");
+                    lectura = leer.next();
+                    vendedor1.setRut(lectura);
+                    
+                    
+                    System.out.println("Ingrese número de vendedor: ");
+                    numero = leer.nextInt();
+                    vendedor1.setNroVendedor(numero);
+                    
+                    System.out.println("");
+                    System.out.println("");
+                    System.out.println("");
                 case 3:
                 case 4:
                 case 5:
