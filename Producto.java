@@ -32,18 +32,7 @@ public class Producto {
     }
     
     
-    public int totalBruto(Pedido cantidad){
-        
-        
-        double total = 0;
-        
-        
-        total = cantidad.getCantidadSolicitada() * precioUnitario;
-        System.out.println("Total bruto: "+total);
-        return 0;
-        
-        
-    }
+
 
     public String getCodigoUnico() {
         return codigoUnico;

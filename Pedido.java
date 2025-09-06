@@ -65,7 +65,7 @@ public class Pedido {
     public boolean validarPedido(Cliente cliente){
         
         if (cliente.comprobarEdad(cliente.getEdad())){
-            System.out.println("Pedido confirmado!");
+            System.out.println("!");
             
         }else{
             System.out.println("");
