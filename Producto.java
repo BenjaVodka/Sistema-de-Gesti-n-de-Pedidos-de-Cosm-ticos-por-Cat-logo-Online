@@ -28,18 +28,21 @@ public class Producto {
     
     public boolean productoValido(String producto){
         
-        return producto.equals("crema") && producto.equals("perfume");
+        return producto.equals("crema") || producto.equals("perfume");
     }
     
     
-    public double totalBruto(){
+    public int totalBruto(Pedido cantidad){
         
-        int cantidad = 0;
+        
         double total = 0;
         
         
-        total = cantidad * precioUnitario;
-        return total;
+        total = cantidad.getCantidadSolicitada() * precioUnitario;
+        System.out.println("Total bruto: "+total);
+        return 0;
+        
+        
     }
 
     public String getCodigoUnico() {

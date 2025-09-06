@@ -27,10 +27,9 @@ public class Pedido {
         this.fechaPedido = fechaPedido;
     }
     
-    public boolean pedidoConfirmado(){
+    public void pedidoConfirmado(){
         
-  
-            
+        
   
        
     }

@@ -23,6 +23,7 @@ public class Sistema {
         int numero;
         int opcion;
         String producto;
+        double precio;
         
         //Cliente(String rut, String nombre, int edad, String fechaNacimiento)
         
@@ -162,12 +163,27 @@ public class Sistema {
                       if(producto1.productoValido(producto)){
                           break;
                           
+                          
+                          
                       }else{
                           
                       } System.out.println("Debes ingresar un producto crema o perfume");
                     }while(true);
                     
+                    
+                    System.out.println("Ingrese el precio unitario: ");
+                    precio = leer.nextDouble();
+                    producto1.setPrecioUnitario(precio);
+                    
+                    System.out.println("Ingrese la cantidad: ");
+                    numero = leer.nextInt();
+                    
+                    pedido1.setCantidadSolicitada(numero);
+                    producto1.totalBruto(pedido1);
+                    
                 case 4:
+                    
+                    System.out.println("");
                 case 5:
                     System.out.println("Saliendo del sistema...");
                     break;
