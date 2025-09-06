@@ -45,9 +45,9 @@ public class Pedido {
        double totalBruto = totalBruto(producto);
        double descuento = 0;
        
-        if (producto.getNombre().equalsIgnoreCase("crema")) {
+        if (totalBruto > 50000) {
             descuento = 0.10; // 10%
-        } else if (producto.getNombre().equalsIgnoreCase("perfume")) {
+        } else if (totalBruto > 100000) {
             descuento = 0.20; // 20%
         }
 
@@ -60,6 +60,20 @@ public class Pedido {
         
   
        
+    }
+    
+    public boolean validarPedido(Cliente cliente){
+        
+        if (cliente.comprobarEdad(cliente.getEdad())){
+            System.out.println("Pedido confirmado!");
+            
+        }else{
+            System.out.println("");
+        }
+        
+        return false;
+        
+        
     }
     
     public String getRegistrarCliente() {

@@ -178,12 +178,26 @@ public class Sistema {
                     System.out.println("Ingrese la cantidad: ");
                     numero = leer.nextInt();
                     
-                    //pedido1.setCantidadSolicitada(numero);
-                    //producto1.totalBruto(pedido1);
+                    pedido1.setCantidadSolicitada(numero);
+                    pedido1.totalBruto(producto1);
+                    
+                    
                     
                 case 4:
                     
-                    System.out.println("");
+                    System.out.println("==== PEDIDO =====");
+                    System.out.println("Codigo producto: "+producto1.getCodigoUnico());
+                    System.out.println("Vendedor: "+producto1.getTipo());
+                    System.out.println("Vendedor: "+producto1.getPrecioUnitario());
+                    System.out.println("Producto: "+vendedor1.getNombre());
+                    System.out.println("Vendedor: "+cliente1.getNombre());
+                    System.out.println("Vendedor: "+cliente1.getEdad());
+                    System.out.println("Vendedor: "+pedido1.getCantidadSolicitada());
+                    System.out.println("Vendedor: "+pedido1.totalBruto(producto1));
+                    System.out.println("Vendedor: "+pedido1.validarPedido(cliente1));
+                    System.out.println("Descuento: "+pedido1.totalNeto(producto1));
+                    System.out.println("Estado: "+pedido1.validarPedido(cliente1));
+                    
                 case 5:
                     System.out.println("Saliendo del sistema...");
                     break;
