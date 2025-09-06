@@ -178,8 +178,8 @@ public class Sistema {
                     System.out.println("Ingrese la cantidad: ");
                     numero = leer.nextInt();
                     
-                    pedido1.setCantidadSolicitada(numero);
-                    producto1.totalBruto(pedido1);
+                    //pedido1.setCantidadSolicitada(numero);
+                    //producto1.totalBruto(pedido1);
                     
                 case 4:
                     

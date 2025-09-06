@@ -27,7 +27,35 @@ public class Pedido {
         this.fechaPedido = fechaPedido;
     }
     
-    public void pedidoConfirmado(){
+        public double totalBruto(Producto precio){
+        
+        
+        double total = 0;
+        
+        
+        total = cantidadSolicitada * precio.getPrecioUnitario();
+        System.out.println("Total bruto: "+total);
+        return 0;
+        
+        
+    }
+    
+    public double totalNeto(Producto producto){
+        
+       double totalBruto = totalBruto(producto);
+       double descuento = 0;
+       
+        if (producto.getNombre().equalsIgnoreCase("crema")) {
+            descuento = 0.10; // 10%
+        } else if (producto.getNombre().equalsIgnoreCase("perfume")) {
+            descuento = 0.20; // 20%
+        }
+
+        double totalConDescuento = totalBruto - (totalBruto * descuento);
+        System.out.println("Total neto (con descuento): " + totalConDescuento);
+        return totalConDescuento;
+       
+        
         
         
   
